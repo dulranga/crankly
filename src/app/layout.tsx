@@ -17,57 +17,57 @@ const interMono = Inconsolata({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://glifycleaningservices.com.au"),
+    metadataBase: new URL("https://crankly.io"),
     title: {
-        default: "Glify Cleaning Melbourne | Professional House Cleaning Services",
-        template: "%s | Glify Cleaning Melbourne",
+        default: "Crankly | Smart Second-Hand Vehicle Intelligence for Sri Lanka",
+        template: "%s | Crankly",
     },
     description:
-        "Professional house cleaning services in Melbourne. Book trusted, reliable cleaners for standard, deep, and end-of-lease cleaning. Satisfaction guaranteed.",
+        "Make smarter second-hand vehicle purchases in Sri Lanka. Get accident reports, service records, fair pricing, and real owner reviews. Buy with confidence, not doubt.",
     keywords: [
-        "house cleaning Melbourne",
-        "professional cleaners Melbourne",
-        "cleaning services Melbourne",
-        "end of lease cleaning",
-        "deep cleaning",
-        "standard cleaning",
-        "domestic cleaning",
-        "home cleaning",
-        "cleaning company Melbourne",
-        "reliable cleaners",
+        "second-hand cars Sri Lanka",
+        "used vehicles Sri Lanka",
+        "car history reports",
+        "vehicle accident history",
+        "fair car pricing",
+        "buy used car safely",
+        "motorcycle history",
+        "three-wheeler reports",
+        "vehicle verification Sri Lanka",
+        "car buyer confidence",
     ],
-    authors: [{ name: "Glify Cleaning Services" }],
-    creator: "Glify Cleaning Services",
-    publisher: "Glify Cleaning Services",
+    authors: [{ name: "Crankly" }],
+    creator: "Crankly",
+    publisher: "Crankly",
     formatDetection: {
         email: false,
         address: false,
         telephone: false,
     },
     openGraph: {
-        title: "Glify Cleaning Melbourne | Professional House Cleaning Services",
+        title: "Crankly | Smart Second-Hand Vehicle Intelligence for Sri Lanka",
         description:
-            "Professional house cleaning services in Melbourne. Book trusted, reliable cleaners for standard, deep, and end-of-lease cleaning. Satisfaction guaranteed.",
-        url: "https://glifycleaningservices.com.au",
-        siteName: "Glify Cleaning Services",
-        locale: "en_AU",
+            "Make smarter second-hand vehicle purchases in Sri Lanka. Get accident reports, service records, fair pricing, and real owner reviews.",
+        url: "https://crankly.io",
+        siteName: "Crankly",
+        locale: "en_LK",
         type: "website",
         images: [
             {
                 url: "/og-image.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Glify Cleaning Services - Professional House Cleaning in Melbourne",
+                alt: "Crankly - Smart Vehicle Intelligence for Sri Lanka",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Glify Cleaning Melbourne | Professional House Cleaning Services",
+        title: "Crankly | Smart Second-Hand Vehicle Intelligence for Sri Lanka",
         description:
-            "Professional house cleaning services in Melbourne. Book trusted, reliable cleaners for standard, deep, and end-of-lease cleaning.",
+            "Make smarter second-hand vehicle purchases in Sri Lanka. Get accident reports, service records, fair pricing, and real owner reviews.",
         images: ["/og-image.jpg"],
-        creator: "@glifycleaning",
+        creator: "@cranklyapp",
     },
     robots: {
         index: true,
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
         // bing: "your-bing-verification-code", // Add if using Bing Webmaster Tools
     },
     alternates: {
-        canonical: "https://glifycleaningservices.com.au",
+        canonical: "https://crankly.io",
     },
     icons: [
         {

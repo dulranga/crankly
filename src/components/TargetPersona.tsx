@@ -18,10 +18,10 @@ const TargetPersona = () => {
                     </g>
                 </svg>
             ),
-            color: "from-blue-50 to-blue-100",
-            borderColor: "border-blue-300",
-            textColor: "text-blue-700",
-            bgIcon: "bg-blue-200",
+            bgColor1: "#F5F8FB",
+            bgColor2: "#E8F1F8",
+            borderColor: "#EFF6FC",
+            textColor: "#4B7A9C",
         },
         {
             title: "Families Buying a Used Car",
@@ -42,10 +42,10 @@ const TargetPersona = () => {
                     </g>
                 </svg>
             ),
-            color: "from-green-50 to-green-100",
-            borderColor: "border-green-300",
-            textColor: "text-green-700",
-            bgIcon: "bg-green-200",
+            bgColor1: "#F5F8FB",
+            bgColor2: "#E8F1F8",
+            borderColor: "#EFF6FC",
+            textColor: "#4B7A9C",
         },
         {
             title: "Resellers & Dealers",
@@ -58,10 +58,10 @@ const TargetPersona = () => {
                     />
                 </svg>
             ),
-            color: "from-orange-50 to-orange-100",
-            borderColor: "border-orange-300",
-            textColor: "text-orange-700",
-            bgIcon: "bg-orange-200",
+            bgColor1: "#F5F8FB",
+            bgColor2: "#E8F1F8",
+            borderColor: "#EFF6FC",
+            textColor: "#4B7A9C",
         },
         {
             title: "Classic Car Collectors",
@@ -75,10 +75,10 @@ const TargetPersona = () => {
                     />
                 </svg>
             ),
-            color: "from-purple-50 to-purple-100",
-            borderColor: "border-purple-300",
-            textColor: "text-purple-700",
-            bgIcon: "bg-purple-200",
+            bgColor1: "#F5F8FB",
+            bgColor2: "#E8F1F8",
+            borderColor: "#EFF6FC",
+            textColor: "#4B7A9C",
         },
     ];
 
@@ -101,15 +101,27 @@ const TargetPersona = () => {
                         {personas.map((persona, idx) => (
                             <div
                                 key={idx}
-                                className={`bg-gradient-to-br ${persona.color} border-2 ${persona.borderColor} rounded-lg p-6 text-left cursor-default`}
+                                style={{
+                                    background: `linear-gradient(135deg, ${persona.bgColor1} 0%, ${persona.bgColor2} 100%)`,
+                                    borderColor: persona.borderColor,
+                                }}
+                                className={`border-2 rounded-lg p-6 text-left cursor-default`}
                             >
                                 <div className="flex items-center gap-3 mb-4">
                                     <div
-                                        className={`p-3 rounded-lg ${persona.bgIcon} ${persona.textColor}`}
+                                        style={{
+                                            backgroundColor: persona.bgColor1,
+                                            color: persona.textColor,
+                                            borderColor: persona.borderColor,
+                                        }}
+                                        className={`p-3 rounded-lg border-2`}
                                     >
                                         {persona.icon}
                                     </div>
-                                    <h3 className={`text-xl font-bold ${persona.textColor}`}>
+                                    <h3
+                                        style={{ color: persona.textColor }}
+                                        className={`text-xl font-bold`}
+                                    >
                                         {persona.title}
                                     </h3>
                                 </div>
@@ -120,9 +132,15 @@ const TargetPersona = () => {
                         ))}
                     </div>
 
-                    <div className="mt-8 p-6 bg-indigo-50 border border-indigo-200 rounded-lg">
+                    <div
+                        style={{
+                            background: `linear-gradient(135deg, #F5F8FB 0%, #E8F1F8 100%)`,
+                            borderColor: "#EFF6FC",
+                        }}
+                        className="mt-8 p-6 border-2 rounded-lg"
+                    >
                         <p className="text-gray-800 text-lg">
-                            <span className="font-bold text-indigo-700">
+                            <span style={{ color: "#4B7A9C" }} className="font-bold">
                                 No matter who you are,
                             </span>{" "}
                             if you&rsquo;re buying a second-hand vehicle in Sri Lanka, Crankly makes

@@ -12,10 +12,10 @@ const Features = () => {
                     </g>
                 </svg>
             ),
-            color: "from-blue-50 to-cyan-50",
-            borderColor: "border-blue-200",
-            textColor: "text-blue-700",
-            bgIcon: "bg-blue-100",
+            bgColor1: "#F7FDF5",
+            bgColor2: "#EDFAE3",
+            borderColor: "#F0F7EE",
+            textColor: "#5A8B5A",
         },
         {
             title: "Find What People Said Online",
@@ -33,10 +33,10 @@ const Features = () => {
                     />
                 </svg>
             ),
-            color: "from-green-50 to-emerald-50",
-            borderColor: "border-green-200",
-            textColor: "text-green-700",
-            bgIcon: "bg-green-100",
+            bgColor1: "#F7FDF5",
+            bgColor2: "#EDFAE3",
+            borderColor: "#F0F7EE",
+            textColor: "#5A8B5A",
         },
         {
             title: "Read Why Buyers Walked Away",
@@ -49,10 +49,10 @@ const Features = () => {
                     />
                 </svg>
             ),
-            color: "from-orange-50 to-amber-50",
-            borderColor: "border-orange-200",
-            textColor: "text-orange-700",
-            bgIcon: "bg-orange-100",
+            bgColor1: "#F7FDF5",
+            bgColor2: "#EDFAE3",
+            borderColor: "#F0F7EE",
+            textColor: "#5A8B5A",
         },
         {
             title: "Negotiate with Confidence",
@@ -66,10 +66,10 @@ const Features = () => {
                     />
                 </svg>
             ),
-            color: "from-purple-50 to-violet-50",
-            borderColor: "border-purple-200",
-            textColor: "text-purple-700",
-            bgIcon: "bg-purple-100",
+            bgColor1: "#F7FDF5",
+            bgColor2: "#EDFAE3",
+            borderColor: "#F0F7EE",
+            textColor: "#5A8B5A",
         },
     ];
 
@@ -91,15 +91,27 @@ const Features = () => {
                         {features.map((feature, idx) => (
                             <div
                                 key={idx}
-                                className={`bg-gradient-to-br ${feature.color} border ${feature.borderColor} rounded-lg p-6 text-left cursor-default`}
+                                style={{
+                                    background: `linear-gradient(135deg, ${feature.bgColor1} 0%, ${feature.bgColor2} 100%)`,
+                                    borderColor: feature.borderColor,
+                                }}
+                                className={`border-2 rounded-lg p-6 text-left cursor-default`}
                             >
                                 <div className="flex items-center gap-3 mb-4">
                                     <div
-                                        className={`p-3 rounded-lg ${feature.bgIcon} ${feature.textColor}`}
+                                        style={{
+                                            backgroundColor: feature.bgColor1,
+                                            color: feature.textColor,
+                                            borderColor: feature.borderColor,
+                                        }}
+                                        className={`p-3 rounded-lg border-2`}
                                     >
                                         {feature.icon}
                                     </div>
-                                    <h3 className={`text-xl font-bold ${feature.textColor}`}>
+                                    <h3
+                                        style={{ color: feature.textColor }}
+                                        className={`text-xl font-bold`}
+                                    >
                                         {feature.title}
                                     </h3>
                                 </div>
@@ -110,11 +122,19 @@ const Features = () => {
                         ))}
                     </div>
 
-                    <div className="mt-8 p-6 bg-green-50 border border-green-200 rounded-lg">
+                    <div
+                        style={{
+                            background: `linear-gradient(135deg, #F7FDF5 0%, #EDFAE3 100%)`,
+                            borderColor: "#F0F7EE",
+                        }}
+                        className="mt-8 p-6 border-2 rounded-lg"
+                    >
                         <p className="text-gray-800 text-lg">
-                            <span className="font-bold text-green-700">The result?</span> You buy
-                            with confidence. You know what you&rsquo;re paying for. You save money
-                            by negotiating a better price.
+                            <span style={{ color: "#5A8B5A" }} className="font-bold">
+                                The result?
+                            </span>{" "}
+                            You buy with confidence. You know what you&rsquo;re paying for. You save
+                            money by negotiating a better price.
                         </p>
                     </div>
                 </div>

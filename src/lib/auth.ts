@@ -11,7 +11,7 @@ import { accessControl, roles } from "./access-control/ac-system";
 
 // better auth
 export const auth = betterAuth({
-    appName: "Glify",
+    appName: "Crankly",
     logger: {
         disabled: false,
         level: "error",
@@ -47,13 +47,13 @@ export const auth = betterAuth({
     // },
 
     advanced: {
-        cookiePrefix: "glify",
+        cookiePrefix: "crankly",
     },
-    trustedOrigins: [
-        "http://localhost:3011",
-        "https://dev.glifycleaningservices.com.au/",
-        "https://glifycleaningservices.com.au/",
-    ],
+    // trustedOrigins: [
+    //     "http://localhost:3011",
+    //     "https://dev.glifycleaningservices.com.au/",
+    //     "https://glifycleaningservices.com.au/",
+    // ],
 
     plugins: [
         admin({

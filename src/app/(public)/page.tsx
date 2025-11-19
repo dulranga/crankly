@@ -9,130 +9,72 @@ const structuredData = {
     "@graph": [
         {
             "@type": "Organization",
-            "@id": "https://glifycleaningservices.com.au/#organization",
-            name: "Glify Cleaning Services",
-            url: "https://glifycleaningservices.com.au",
+            "@id": "https://crankly.io/#organization",
+            name: "Crankly",
+            url: "https://crankly.io",
             logo: {
                 "@type": "ImageObject",
-                url: "https://glifycleaningservices.com.au/logo.png",
+                url: "https://crankly.io/logo.png",
             },
             contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+61481346932",
+                email: "hello@crankly.io",
                 contactType: "customer service",
                 availableLanguage: "English",
             },
             address: {
                 "@type": "PostalAddress",
-                addressLocality: "Berwick",
-                addressRegion: "Victoria",
-                postalCode: "3806",
-                addressCountry: "AU",
+                addressCountry: "LK",
             },
-            email: "info@glifycleaningservices.com",
-            sameAs: ["https://facebook.com/glify", "https://instagram.com/glify_cleaning_services"],
+            sameAs: [
+                "https://facebook.com/crankly",
+                "https://instagram.com/crankly",
+                "https://twitter.com/cranklyapp",
+            ],
         },
         {
-            "@type": "LocalBusiness",
-            "@id": "https://glifycleaningservices.com.au/#localbusiness",
-            name: "Glify Cleaning Services",
-            image: "https://glifycleaningservices.com.au/logo.png",
-            telephone: "+61481346932",
-            email: "info@glifycleaningservices.com",
-            address: {
-                "@type": "PostalAddress",
-                addressLocality: "Berwick",
-                addressRegion: "Victoria",
-                postalCode: "3806",
-                addressCountry: "AU",
+            "@type": "WebApplication",
+            "@id": "https://crankly.io/#webapp",
+            name: "Crankly",
+            url: "https://crankly.io",
+            description:
+                "Smart second-hand vehicle intelligence platform for Sri Lanka. Get accident reports, service records, fair pricing, and owner reviews.",
+            applicationCategory: "UtilitiesApplication",
+            offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "LKR",
+                description: "Free access to vehicle intelligence reports",
             },
-            geo: {
-                "@type": "GeoCoordinates",
-                latitude: -38.0347,
-                longitude: 145.3527,
-            },
-            url: "https://glifycleaningservices.com.au",
-            priceRange: "$115-$1299",
-            openingHoursSpecification: [
-                {
-                    "@type": "OpeningHoursSpecification",
-                    dayOfWeek: [
-                        "Monday",
-                        "Tuesday",
-                        "Wednesday",
-                        "Thursday",
-                        "Friday",
-                        "Saturday",
-                        "Sunday",
-                    ],
-                    opens: "08:00",
-                    closes: "17:00",
-                },
-            ],
-            serviceArea: {
-                "@type": "Place",
-                name: "Melbourne, Victoria, Australia",
-            },
-            hasOfferCatalog: {
-                "@type": "OfferCatalog",
-                name: "Cleaning Services",
-                itemListElement: [
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Service",
-                            name: "Standard Cleaning",
-                            description: "Regular house cleaning service",
-                        },
-                        priceSpecification: {
-                            "@type": "PriceSpecification",
-                            minPrice: "115",
-                            priceCurrency: "AUD",
-                        },
-                    },
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Service",
-                            name: "Deep Cleaning",
-                            description: "Thorough deep cleaning service",
-                        },
-                        priceSpecification: {
-                            "@type": "PriceSpecification",
-                            minPrice: "220",
-                            priceCurrency: "AUD",
-                        },
-                    },
-                    {
-                        "@type": "Offer",
-                        itemOffered: {
-                            "@type": "Service",
-                            name: "End of Lease Cleaning",
-                            description: "Move-out cleaning service",
-                        },
-                        priceSpecification: {
-                            "@type": "PriceSpecification",
-                            minPrice: "359",
-                            priceCurrency: "AUD",
-                        },
-                    },
-                ],
+            aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                ratingCount: "1250",
             },
         },
         {
             "@type": "WebSite",
-            "@id": "https://glifycleaningservices.com.au/#website",
-            url: "https://glifycleaningservices.com.au",
-            name: "Glify Cleaning Services",
-            description: "Professional cleaning services in Melbourne",
+            "@id": "https://crankly.io/#website",
+            url: "https://crankly.io",
+            name: "Crankly",
+            description:
+                "Smart second-hand vehicle intelligence for Sri Lanka. Make confident vehicle purchase decisions with real data.",
+            potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                    "@type": "EntryPoint",
+                    urlTemplate: "https://crankly.io/search?q={search_term_string}",
+                },
+                query_input: "required name=search_term_string",
+            },
         },
     ],
 };
 
 export const metadata = {
-    title: "Glify Cleaning Melbourne | Book Trusted Cleaners",
+    title: "Crankly | Smart Second-Hand Vehicle Intelligence for Sri Lanka",
     description:
-        "Book trusted house cleaning services in Melbourne with Glify. Fast quotes, easy booking, and satisfaction guaranteed for every clean.",
+        "Make smarter second-hand vehicle purchases in Sri Lanka. Get accident reports, service records, fair pricing, and real owner reviews. Buy with confidence.",
 };
 export default function Home() {
     return (

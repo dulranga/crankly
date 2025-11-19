@@ -1,4 +1,11 @@
+"use client";
+
+import { addToWaitlist } from "@/actions/waitlist";
+import { Controller, useForm } from "react-hook-form";
+import { toast } from "sonner";
+import Form from "./form/Form";
 import { Button } from "./ui/button";
+import { useLocalStorage } from "@/hooks/use-local-storage";
 
 const HeroSection = () => {
     const features = [
@@ -55,6 +62,23 @@ const HeroSection = () => {
         },
     ];
 
+    const [isWaitlistMember] = useLocalStorage("waitlist_member", false);
+    const form = useForm();
+
+    const onSubmit = async (data: unknown) => {
+        try {
+            const res = await addToWaitlist(data);
+            if (res.success) {
+                toast.success("You have successfully registered for the waitlist");
+                form.reset();
+                localStorage.setItem("waitlist_member", "true");
+                window.location.reload(); // Reload to show banner
+            }
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        } catch (error: any) {
+            toast.error(error.message);
+        }
+    };
     return (
         <section>
             <div className="max-w-6xl mx-auto px-4 py-16 gap-12 text-gray-600 md:px-8 ">
@@ -80,19 +104,32 @@ const HeroSection = () => {
                         need, to buy with confidence.
                     </p>
                     <div className="items-center flex-col justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 ">
-                        <form
-                            // onSubmit={(e) => e.preventDefault()}
+                        <Form
+                            form={form}
+                            onFinish={onSubmit}
                             className="flex items-center justify-center rounded-lg p-1 sm:mx-auto border w-full max-w-md"
                         >
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="text-gray-500 w-full p-2 outline-none"
+                            <Controller
+                                disabled={isWaitlistMember}
+                                name="email"
+                                render={(props) => (
+                                    <input
+                                        {...props.field}
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        className="text-gray-500 w-full p-2 outline-none"
+                                    />
+                                )}
                             />
-                            <Button className="p-2 px-3 rounded-lg font-medium duration-150 outline-none shadow-md focus:shadow-none sm:px-4 whitespace-nowrap">
+
+                            <Button
+                                className="p-2 px-3 rounded-lg font-medium duration-150 outline-none shadow-md focus:shadow-none sm:px-4 whitespace-nowrap"
+                                disabled={isWaitlistMember}
+                                type="submit"
+                            >
                                 Get Early Access
                             </Button>
-                        </form>
+                        </Form>
                         <p className="mt-3 max-w-lg sm:mx-auto text-sm">
                             Early users get free credits
                         </p>

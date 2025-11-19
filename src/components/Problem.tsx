@@ -12,9 +12,10 @@ const Problem = () => {
                     </g>
                 </svg>
             ),
-            color: "from-red-50 to-orange-50",
-            borderColor: "border-red-200",
-            textColor: "text-red-700",
+            bgColor1: "#FFFBF7",
+            bgColor2: "#FFF3E6",
+            borderColor: "#F5E5DA",
+            textColor: "#9B6B4D",
         },
         {
             title: "Sellers don't tell You the Truth",
@@ -27,9 +28,10 @@ const Problem = () => {
                     />
                 </svg>
             ),
-            color: "from-amber-50 to-yellow-50",
-            borderColor: "border-amber-200",
-            textColor: "text-amber-700",
+            bgColor1: "#FFFBF7",
+            bgColor2: "#FFF3E6",
+            borderColor: "#F5E5DA",
+            textColor: "#9B6B4D",
         },
         {
             title: "You Find Out Too Late",
@@ -50,9 +52,10 @@ const Problem = () => {
                     </g>
                 </svg>
             ),
-            color: "from-pink-50 to-rose-50",
-            borderColor: "border-pink-200",
-            textColor: "text-rose-700",
+            bgColor1: "#FFFBF7",
+            bgColor2: "#FFF3E6",
+            borderColor: "#F5E5DA",
+            textColor: "#9B6B4D",
         },
         {
             title: "It's Like Flipping a Coin",
@@ -76,9 +79,10 @@ const Problem = () => {
                     </g>
                 </svg>
             ),
-            color: "from-purple-50 to-indigo-50",
-            borderColor: "border-purple-200",
-            textColor: "text-purple-700",
+            bgColor1: "#FFFBF7",
+            bgColor2: "#FFF3E6",
+            borderColor: "#F5E5DA",
+            textColor: "#9B6B4D",
         },
     ];
 
@@ -100,13 +104,27 @@ const Problem = () => {
                         {problems.map((problem, idx) => (
                             <div
                                 key={idx}
-                                className={`bg-gradient-to-br ${problem.color} border ${problem.borderColor} rounded-lg p-6 text-left transition-all duration-300 cursor-default`}
+                                style={{
+                                    background: `linear-gradient(135deg, ${problem.bgColor1} 0%, ${problem.bgColor2} 100%)`,
+                                    borderColor: problem.borderColor,
+                                }}
+                                className={`border-2 rounded-lg p-6 text-left cursor-default`}
                             >
                                 <div className={`flex items-center gap-3 mb-4`}>
-                                    <div className={`p-3 rounded-lg bg-white ${problem.textColor}`}>
+                                    <div
+                                        style={{
+                                            backgroundColor: problem.bgColor1,
+                                            color: problem.textColor,
+                                            borderColor: problem.borderColor,
+                                        }}
+                                        className={`p-3 rounded-lg border-2`}
+                                    >
                                         {problem.icon}
                                     </div>
-                                    <h3 className={`text-xl font-bold ${problem.textColor}`}>
+                                    <h3
+                                        style={{ color: problem.textColor }}
+                                        className={`text-xl font-bold`}
+                                    >
                                         {problem.title}
                                     </h3>
                                 </div>
@@ -117,10 +135,18 @@ const Problem = () => {
                         ))}
                     </div>
 
-                    <div className="mt-8 p-6 bg-red-50 border border-red-200 rounded-lg">
+                    <div
+                        style={{
+                            background: `linear-gradient(135deg, #FFFBF7 0%, #FFF3E6 100%)`,
+                            borderColor: "#F5E5DA",
+                        }}
+                        className="mt-8 p-6 border-2 rounded-lg"
+                    >
                         <p className="text-gray-800 text-lg">
-                            <span className="font-bold text-red-700">You end up stressed.</span> You
-                            overpay for a car you&rsquo;re not sure about. You worry every time
+                            <span style={{ color: "#9B6B4D" }} className="font-bold">
+                                You end up stressed.
+                            </span>{" "}
+                            You overpay for a car you&rsquo;re not sure about. You worry every time
                             something sounds wrong. You wish you had real facts before spending your
                             money.
                         </p>

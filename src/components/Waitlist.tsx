@@ -1,4 +1,30 @@
+"use client";
+
+import { addToWaitlist } from "@/actions/waitlist";
+import { useLocalStorage } from "@/hooks/use-local-storage";
+import { Controller, useForm } from "react-hook-form";
+import { toast } from "sonner";
+import Form from "./form/Form";
+import { Button } from "./ui/button";
+
 export default function WaitList() {
+    const form = useForm();
+    const [isWaitlistMember, setIsWaitlistMember] = useLocalStorage("waitlist_member", false);
+
+    const onSubmit = async (data: unknown) => {
+        try {
+            const res = await addToWaitlist(data);
+            if (res.success) {
+                toast.success("You have successfully registered for the waitlist");
+                form.reset();
+                setIsWaitlistMember(true);
+            }
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        } catch (error: any) {
+            toast.error(error.message);
+        }
+    };
+
     return (
         <section id="join" className="py-20 max-w-screen-xl mx-auto">
             <div className="relative overflow-hidden mx-4 px-6 py-24 rounded-3xl bg-primary md:px-12 md:mx-8 lg:py-32">
@@ -15,19 +41,32 @@ export default function WaitList() {
                     </div>
 
                     <div className="space-y-6 mt-10">
-                        <form className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:max-w-lg sm:mx-auto">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="w-full px-6 py-4 rounded-lg outline-none text-gray-800 placeholder-gray-500 font-medium bg-white"
+                        <Form
+                            form={form}
+                            onFinish={onSubmit}
+                            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:max-w-lg sm:mx-auto"
+                        >
+                            <Controller
+                                name="email"
+                                disabled={isWaitlistMember}
+                                render={(props) => (
+                                    <input
+                                        {...props.field}
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        required
+                                        className="w-full px-6 py-4 rounded-lg outline-none text-gray-800 placeholder-gray-500 font-medium bg-white"
+                                    />
+                                )}
                             />
-                            <button
+                            <Button
                                 type="submit"
-                                className="w-full sm:w-auto px-8 py-4 rounded-lg font-bold text-lg text-blue-600 bg-white hover:bg-blue-50 active:bg-gray-100 duration-150 outline-none shadow-lg hover:shadow-xl transition-all whitespace-nowrap"
+                                disabled={isWaitlistMember}
+                                className="w-full h-auto sm:w-auto px-8 py-4 rounded-lg font-bold text-lg text-blue-600 bg-white hover:bg-blue-50 active:bg-gray-100 duration-150 outline-none shadow-lg hover:shadow-xl transition-all whitespace-nowrap"
                             >
                                 Get Early Access
-                            </button>
-                        </form>
+                            </Button>
+                        </Form>
 
                         <div className="flex flex-row items-center justify-center gap-2 text-blue-100 text-sm sm:text-base">
                             <svg
