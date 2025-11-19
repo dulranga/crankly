@@ -3,7 +3,7 @@ const TargetPersona = () => {
         {
             title: "First-Time Bike Buyers",
             description:
-                "You're buying your first motorcycle or scooter. You don't know what to look for. Crankly shows you the real history so you don't get stuck with someone else's problem.",
+                "You don't know what to look for. Don't let someone else's problem become yours.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const TargetPersona = () => {
         {
             title: "Families Buying a Used Car",
             description:
-                "You want a safe, reliable family car. You need to know if it's been in accidents or has hidden problems. Crankly gives you peace of mind before you commit.",
+                "You want your family safe. Know if that car has hidden problems before you drive them in it.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +49,7 @@ const TargetPersona = () => {
         },
         {
             title: "Resellers & Dealers",
-            description:
-                "You flip cars for profit. You need to know the real value and history before buying. Crankly helps you avoid bad deals and negotiate better prices.",
+            description: "Know the real value. Buy smarter. Flip for real profit, not just luck.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +73,7 @@ const TargetPersona = () => {
         {
             title: "Classic Car Collectors",
             description:
-                "You collect rare or vintage vehicles. You want detailed history to verify authenticity and condition. Crankly helps you find the real story behind each car.",
+                "Verify authenticity. Know the real story of every classic before adding it to your collection.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

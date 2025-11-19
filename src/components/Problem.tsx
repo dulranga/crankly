@@ -2,8 +2,7 @@ const Problem = () => {
     const problems = [
         {
             title: "Prices Don't Make Sense",
-            description:
-                "You see a car listed for a high price, but you don't know why. Is it actually worth that much? You're left guessing.",
+            description: "Why is it so expensive? You have no idea.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -26,8 +25,7 @@ const Problem = () => {
         },
         {
             title: "No One Tells You the Truth",
-            description:
-                "The seller won't tell you if the car was in an accident, had engine problems, or has hidden damage. You have to trust their word.",
+            description: "Hidden accidents. Hidden damage. You only get their side of the story.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +48,7 @@ const Problem = () => {
         {
             title: "You Find Out Too Late",
             description:
-                "You buy the car thinking it's fine. A month later, the engine breaks or you discover the odometer was fake. Now it's too late.",
+                "Engine fails. Odometer was fake. Now you're stuck with a broken car and no recourse.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,8 +69,7 @@ const Problem = () => {
         },
         {
             title: "It's Like Flipping a Coin",
-            description:
-                "Buying a second-hand car feels like pure luck. You're spending your money on a big gamble with no real facts to help you decide.",
+            description: "No facts. No data. Just a blind bet with your money.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -104,8 +101,7 @@ const Problem = () => {
                         </h2>
                         <p className="max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
                             As a buyer, you&rsquo;re stuck in a broken system. You want to find a
-                            good car at a fair price, but everyone around you seems to be hiding
-                            something.
+                            good car at a fair price, but sellers seems to be hiding something.
                         </p>
                     </div>
 

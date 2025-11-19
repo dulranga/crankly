@@ -2,8 +2,7 @@ const Features = () => {
     const features = [
         {
             title: "See Accident & Repair Records",
-            description:
-                "We find accident reports and repair records tied to the car. You see what actually happened so there are no surprises.",
+            description: "Every accident. Every repair. No surprises when you own it.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +25,7 @@ const Features = () => {
         {
             title: "Find What People Said Online",
             description:
-                "We search past social media posts and reviews about the car. See what previous owners and buyers really think about it.",
+                "What did previous owners actually say? See the real reviews and social media posts.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +48,7 @@ const Features = () => {
         },
         {
             title: "Read Why Buyers Walked Away",
-            description:
-                "If someone looked at this car and decided not to buy it, you see their reasons. Learn from other buyers' experiences.",
+            description: "Why did others pass on it? Learn from their decision before you commit.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +71,7 @@ const Features = () => {
         {
             title: "Negotiate with Confidence",
             description:
-                "Armed with real facts, you can talk to sellers on equal ground. You know the car's true value. Most sellers even lower their price.",
+                "You know the facts. You know the real value. Sellers lower their price when they can't hide anymore.",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

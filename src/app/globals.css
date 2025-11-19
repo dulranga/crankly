@@ -121,7 +121,10 @@
 
 @layer base {
     * {
-        @apply border-border outline-ring/50 md:scroll-m-28;
+        @apply border-border outline-ring/50 md:scroll-m-20;
+    }
+    html {
+        @apply scroll-smooth will-change-scroll;
     }
     body {
         @apply bg-background text-foreground;

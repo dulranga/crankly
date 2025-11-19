@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 const HeroSection = () => {
     const features = [
         {
-            name: "Fully Transparent",
+            name: "Real Data",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const HeroSection = () => {
             ),
         },
         {
-            name: "Over 50+ videos",
+            name: "No Hidden Info",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const HeroSection = () => {
             ),
         },
         {
-            name: "400 ratings",
+            name: "Buy Smarter",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -70,14 +70,14 @@ const HeroSection = () => {
                             </div>
                         ))}
                     </div>
-                    <h1 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
-                        Sri Lanka’s <span className="underline">first</span> truth-checking platform
-                        for second-hand vehicles.
+                    <h1 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-[52px]">
+                        Sri Lanka&rsquo;s <span className="text-primary">first</span> truth-checking
+                        platform for second-hand vehicles.
                     </h1>
-                    <p className="max-w-xl mx-auto ">
-                        We reveal real historical facts about any vehicle - past social media posts,
-                        accidents, previous buyer feedback, and more... so you know exactly what
-                        you’re paying for.
+                    <p className="max-w-xl mx-auto text-lg text-gray-700">
+                        The only platform that reveals the real history of second-hand vehicles in
+                        Sri Lanka. Accidents. Repairs. What people actually said. Everything you
+                        need, to buy with confidence.
                     </p>
                     <div className="items-center flex-col justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 ">
                         <form
@@ -93,7 +93,9 @@ const HeroSection = () => {
                                 Get Early Access
                             </Button>
                         </form>
-                        <p className="mt-3 max-w-lg sm:mx-auto">Early users get free credits</p>
+                        <p className="mt-3 max-w-lg sm:mx-auto text-sm">
+                            Early users get free credits
+                        </p>
                     </div>
                 </div>
             </div>

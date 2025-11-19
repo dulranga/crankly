@@ -1,6 +1,6 @@
 export default function WaitList() {
     return (
-        <section className="py-20 max-w-screen-xl mx-auto">
+        <section id="join" className="py-20 max-w-screen-xl mx-auto">
             <div className="relative overflow-hidden mx-4 px-6 py-24 rounded-3xl bg-primary md:px-12 md:mx-8 lg:py-32">
                 <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
                     <div className="space-y-4">
@@ -8,8 +8,9 @@ export default function WaitList() {
                             Ready to buy smarter?
                         </h2>
                         <p className="text-lg md:text-xl text-blue-100 leading-relaxed">
-                            Join early users getting free credits to check vehicles before anyone
-                            else. Be the first to know the truth about any car.
+                            Join now and get ahead of others. When we launch, you&rsquo;ll have the
+                            tools to negotiate better prices and close killer deals on the vehicle
+                            you wanna buy.
                         </p>
                     </div>
 
@@ -28,7 +29,7 @@ export default function WaitList() {
                             </button>
                         </form>
 
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-blue-100 text-sm sm:text-base">
+                        <div className="flex flex-row items-center justify-center gap-2 text-blue-100 text-sm sm:text-base">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
@@ -46,9 +47,7 @@ export default function WaitList() {
                     </div>
 
                     <p className="text-sm text-blue-200 pt-4">
-                        No spam. We value your privacy.
-                        <br />
-                        We will let you know as soon as we launch the platform.
+                        Early users save the most. Limited beta spots available.
                     </p>
                 </div>
             </div>
