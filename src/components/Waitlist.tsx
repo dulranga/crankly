@@ -1,47 +1,55 @@
 export default function WaitList() {
     return (
-        <section className="py-10 max-w-screen-xl mx-auto">
-            <div className="relative overflow-hidden mx-4 px-4 py-14 rounded-2xl bg-blue-600 md:px-8 md:mx-8">
-                <div className="relative z-10 max-w-xl mx-auto sm:text-center">
-                    <div className="space-y-3">
-                        <h3 className="text-3xl text-white font-bold">
-                            Subscribe to our newsletter
-                        </h3>
-                        <p className="text-blue-100 leading-relaxed">
-                            Stay up to date with the roadmap progress, announcements and exclusive
-                            discounts feel free to sign up with your email.
+        <section id="join" className="py-20 max-w-screen-xl mx-auto">
+            <div className="relative overflow-hidden mx-4 px-6 py-24 rounded-3xl bg-primary md:px-12 md:mx-8 lg:py-32">
+                <div className="relative z-10 max-w-2xl mx-auto text-center space-y-8">
+                    <div className="space-y-4">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl text-white font-extrabold leading-tight">
+                            Ready to buy smarter?
+                        </h2>
+                        <p className="text-lg md:text-xl text-blue-100 leading-relaxed">
+                            Join now and get ahead of others. When we launch, you&rsquo;ll have the
+                            tools to negotiate better prices and close killer deals on the vehicle
+                            you wanna buy.
                         </p>
                     </div>
-                    <div className="mt-6">
-                        <form
-                            // onSubmit={(e) => e.preventDefault()}
-                            className="flex items-center justify-center bg-white rounded-lg p-1 sm:max-w-md sm:mx-auto"
-                        >
+
+                    <div className="space-y-6 mt-10">
+                        <form className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:max-w-lg sm:mx-auto">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="text-gray-500 w-full p-2 outline-none"
+                                className="w-full px-6 py-4 rounded-lg outline-none text-gray-800 placeholder-gray-500 font-medium bg-white"
                             />
-                            <button className="p-2 px-3 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 duration-150 outline-none shadow-md focus:shadow-none sm:px-4">
-                                Subscribe
+                            <button
+                                type="submit"
+                                className="w-full sm:w-auto px-8 py-4 rounded-lg font-bold text-lg text-blue-600 bg-white hover:bg-blue-50 active:bg-gray-100 duration-150 outline-none shadow-lg hover:shadow-xl transition-all whitespace-nowrap"
+                            >
+                                Get Early Access
                             </button>
                         </form>
-                        <p className="mt-3 max-w-lg text-[15px] text-blue-100 sm:mx-auto">
-                            No spam ever, we are care about the protection of your data. Read our{" "}
-                            <a className="underline" href="javascript:void(0)">
-                                {" "}
-                                Privacy Policy{" "}
-                            </a>
-                        </p>
+
+                        <div className="flex flex-row items-center justify-center gap-2 text-blue-100 text-sm sm:text-base">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                className="w-5 h-5 text-blue-300"
+                            >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd"
+                                />
+                            </svg>
+                            <span className="font-semibold">Early users get free credits</span>
+                        </div>
                     </div>
+
+                    <p className="text-sm text-blue-200 pt-4">
+                        Early users save the most. Limited beta spots available.
+                    </p>
                 </div>
-                <div
-                    className="absolute inset-0 w-full h-full"
-                    style={{
-                        background:
-                            "linear-gradient(268.24deg, rgba(59, 130, 246, 0.76) 50%, rgba(59, 130, 246, 0.545528) 80.61%, rgba(55, 48, 163, 0) 117.35%)",
-                    }}
-                ></div>
             </div>
         </section>
     );

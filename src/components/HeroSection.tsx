@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 const HeroSection = () => {
     const features = [
         {
-            name: "Fully Transparent",
+            name: "Real Data",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const HeroSection = () => {
             ),
         },
         {
-            name: "Over 50+ videos",
+            name: "No Hidden Info",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const HeroSection = () => {
             ),
         },
         {
-            name: "400 ratings",
+            name: "Buy Smarter",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ const HeroSection = () => {
 
     return (
         <section>
-            <div className="max-w-6xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 ">
+            <div className="max-w-6xl mx-auto px-4 py-16 gap-12 text-gray-600 md:px-8 ">
                 <div className="space-y-5 max-w-4xl mx-auto text-center">
                     <div className="flex flex-wrap items-center justify-center gap-6 ">
                         {features.map((item, idx) => (
@@ -70,14 +70,14 @@ const HeroSection = () => {
                             </div>
                         ))}
                     </div>
-                    <h1 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
-                        Sri Lanka’s <span className="underline">first</span> truth-checking platform
-                        for second-hand vehicles.
+                    <h1 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-[52px]">
+                        Sri Lanka&rsquo;s <span className="text-primary">first</span> truth-checking
+                        platform for second-hand vehicles.
                     </h1>
-                    <p className="max-w-xl mx-auto ">
-                        We reveal real historical facts about any vehicle - past social media posts,
-                        accidents, previous buyer feedback, and more... so you know exactly what
-                        you’re paying for.
+                    <p className="max-w-xl mx-auto text-lg text-gray-700">
+                        The only platform that reveals the real history of second-hand vehicles in
+                        Sri Lanka. Accidents. Repairs. What people actually said. Everything you
+                        need, to buy with confidence.
                     </p>
                     <div className="items-center flex-col justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 ">
                         <form
@@ -89,11 +89,13 @@ const HeroSection = () => {
                                 placeholder="Enter your email"
                                 className="text-gray-500 w-full p-2 outline-none"
                             />
-                            <button className="p-2 px-3 rounded-lg font-medium duration-150 outline-none shadow-md focus:shadow-none sm:px-4 whitespace-nowrap">
+                            <Button className="p-2 px-3 rounded-lg font-medium duration-150 outline-none shadow-md focus:shadow-none sm:px-4 whitespace-nowrap">
                                 Get Early Access
-                            </button>
+                            </Button>
                         </form>
-                        <p className="mt-3 max-w-lg sm:mx-auto">Early users get free credits</p>
+                        <p className="mt-3 max-w-lg sm:mx-auto text-sm">
+                            Early users get free credits
+                        </p>
                     </div>
                 </div>
             </div>

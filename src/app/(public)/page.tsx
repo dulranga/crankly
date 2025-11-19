@@ -1,5 +1,7 @@
-import { Features } from "@/components/Features";
+import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
+import Problem from "@/components/Problem";
+import TargetPersona from "@/components/TargetPersona";
 import WaitList from "@/components/Waitlist";
 
 const structuredData = {
@@ -142,9 +144,12 @@ export default function Home() {
                     __html: JSON.stringify(structuredData).replace(/</g, "\u003c"),
                 }}
             />
-            <div className="space-y-14">
+            <div className="space-y-6">
                 <HeroSection />
+                <Problem />
                 <Features />
+                <TargetPersona />
+                <WaitList />
             </div>
         </>
     );

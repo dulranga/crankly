@@ -43,27 +43,9 @@ const Navbar = async ({}) => {
                         </ul>
                     </div>
                     <div className="flex items-center gap-2">
-                        <Button
-                            asChild
-                            size={"lg"}
-                            variant={"outline"}
-                            className="pr-6! pl-14! relative"
-                        >
-                            <a href={`tel:${CONTACT_NUMBER}`}>
-                                <div className="bg-primary absolute text-white left-0 ml-2 size-8 rounded-full top-1/2 -translate-y-1/2 grid place-items-center">
-                                    <PhoneIcon size={16} />
-                                </div>
-                                {CONTACT_NUMBER}
-                            </a>
-                        </Button>
                         <Button asChild size={"lg"} variant={"default"} className="px-8">
-                            <Link href={"/quotation"}>Get Quote</Link>
+                            <Link href={"/#join"}>Get Early Access</Link>
                         </Button>
-                        {!!session?.session && (
-                            <Button asChild size={"lg"} variant={"default"} className="px-8">
-                                <Link href={"/dashboard"}>Dashboard</Link>
-                            </Button>
-                        )}
                     </div>
                 </nav>
 
@@ -73,59 +55,9 @@ const Navbar = async ({}) => {
                         {logoIcon}
 
                         <div>
-                            <Sheet>
-                                <SheetTrigger asChild>
-                                    <Button variant="default" className="rounded-sm" size="icon">
-                                        <Menu className="size-4" />
-                                    </Button>
-                                </SheetTrigger>
-                                <SheetContent className="overflow-y-auto z-[9999]">
-                                    <SheetHeader>
-                                        <SheetTitle>{logoIcon}</SheetTitle>
-                                    </SheetHeader>
-                                    <div className="flex flex-col gap-6 p-4">
-                                        <ul className="flex flex-col gap-5 font-medium">
-                                            {NAV_LINKS.map((link, i) => (
-                                                <li
-                                                    key={i}
-                                                    className="hover:text-primary text-center transition-colors"
-                                                >
-                                                    <SheetTrigger asChild>
-                                                        <Link href={link.url}>{link.title}</Link>
-                                                    </SheetTrigger>
-                                                </li>
-                                            ))}
-                                        </ul>
-
-                                        <div className="flex flex-col gap-3">
-                                            <Button
-                                                asChild
-                                                size={"lg"}
-                                                variant={"outline"}
-                                                className="relative"
-                                            >
-                                                <a href={`tel:${CONTACT_NUMBER}`}>
-                                                    <div className="bg-primary absolute text-white left-0 ml-2 size-8 rounded-full top-1/2 -translate-y-1/2 grid place-items-center">
-                                                        <PhoneIcon size={16} />
-                                                    </div>
-                                                    {CONTACT_NUMBER}
-                                                </a>
-                                            </Button>
-
-                                            <SheetTrigger asChild>
-                                                <Button
-                                                    asChild
-                                                    size={"lg"}
-                                                    variant={"default"}
-                                                    className="px-8"
-                                                >
-                                                    <Link href={"/quotation"}>Get Quote</Link>
-                                                </Button>
-                                            </SheetTrigger>
-                                        </div>
-                                    </div>
-                                </SheetContent>
-                            </Sheet>
+                            <Button asChild size={"lg"} variant={"default"} className="px-8">
+                                <Link href={"/#join"}>Get Early Access</Link>
+                            </Button>
                         </div>
                     </div>
                 </div>
