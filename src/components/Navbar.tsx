@@ -8,13 +8,10 @@ import { headers } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
 
-const NAV_LINKS = [
-    { title: "Home", url: "/" },
-    { title: "Services", url: "/services" },
-    { title: "Contact", url: "/contact" },
-    { title: "About", url: "/about" },
-    { title: "FAQ", url: "/faq" },
-];
+const NAV_LINKS: {
+    title: string;
+    url: string;
+}[] = [];
 
 const Navbar = async ({}) => {
     const session = await auth.api.getSession({ headers: await headers() });

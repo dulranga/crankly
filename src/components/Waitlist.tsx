@@ -1,6 +1,6 @@
 export default function WaitList() {
     return (
-        <section className="py-14 max-w-screen-xl mx-auto">
+        <section className="py-10 max-w-screen-xl mx-auto">
             <div className="relative overflow-hidden mx-4 px-4 py-14 rounded-2xl bg-blue-600 md:px-8 md:mx-8">
                 <div className="relative z-10 max-w-xl mx-auto sm:text-center">
                     <div className="space-y-3">
@@ -14,7 +14,7 @@ export default function WaitList() {
                     </div>
                     <div className="mt-6">
                         <form
-                            onSubmit={(e) => e.preventDefault()}
+                            // onSubmit={(e) => e.preventDefault()}
                             className="flex items-center justify-center bg-white rounded-lg p-1 sm:max-w-md sm:mx-auto"
                         >
                             <input

@@ -142,9 +142,8 @@ export default function Home() {
                     __html: JSON.stringify(structuredData).replace(/</g, "\u003c"),
                 }}
             />
-            <div className="space-y-14 lg:space-y-20">
+            <div className="space-y-14">
                 <HeroSection />
-                <WaitList />
                 <Features />
             </div>
         </>

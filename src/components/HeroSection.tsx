@@ -74,13 +74,26 @@ const HeroSection = () => {
                         Sri Lanka’s <span className="underline">first</span> truth-checking platform
                         for second-hand vehicles.
                     </h1>
-                    <p className="max-w-xl mx-auto text-balance">
+                    <p className="max-w-xl mx-auto ">
                         We reveal real historical facts about any vehicle - past social media posts,
                         accidents, previous buyer feedback, and more... so you know exactly what
                         you’re paying for.
                     </p>
-                    <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 ">
-                        <Button size="lg">Get Early Access</Button>
+                    <div className="items-center flex-col justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 ">
+                        <form
+                            // onSubmit={(e) => e.preventDefault()}
+                            className="flex items-center justify-center rounded-lg p-1 sm:mx-auto border w-full max-w-md"
+                        >
+                            <input
+                                type="email"
+                                placeholder="Enter your email"
+                                className="text-gray-500 w-full p-2 outline-none"
+                            />
+                            <button className="p-2 px-3 rounded-lg font-medium duration-150 outline-none shadow-md focus:shadow-none sm:px-4 whitespace-nowrap">
+                                Get Early Access
+                            </button>
+                        </form>
+                        <p className="mt-3 max-w-lg sm:mx-auto">Early users get free credits</p>
                     </div>
                 </div>
             </div>
