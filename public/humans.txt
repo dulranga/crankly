@@ -1,0 +1,20 @@
+/* TEAM */
+Developer: Glify Development Team
+Site: https://glifycleaningservices.com.au
+Location: Melbourne, Australia
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript, TypeScript
+Components: Next.js, React, TailwindCSS
+Software: VS Code, Git
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code
+
+/* THANKS */
+Clients who trust us with their cleaning needs
+Melbourne community for supporting local business
+
+/* META */
+Last update: 2024/10/04
+Site version: 1.0

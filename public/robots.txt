@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Block authentication and admin routes
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /contact
+Allow: /faq
+Allow: /quotation
+Allow: /privacy-policy
+Allow: /payment-policy
+
+# Sitemap
+Sitemap: https://glifycleaningservices.com.au/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

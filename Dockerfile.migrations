@@ -1,0 +1,15 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install drizzle-kit and dependencies locally
+RUN npm install --omit=dev drizzle-kit@0.31.4 drizzle-orm pg dotenv \
+    && npm cache clean --force \
+    && rm -rf /root/.npm /tmp/* /var/cache/apk/*
+
+# Copy only config and migrations
+COPY drizzle.config.ts ./
+COPY drizzle ./drizzle
+
+# Run migrations
+CMD ["node_modules/.bin/drizzle-kit", "migrate"]
