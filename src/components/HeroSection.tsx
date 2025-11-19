@@ -73,7 +73,10 @@ const HeroSection = () => {
                 form.reset();
                 localStorage.setItem("waitlist_member", "true");
                 window.location.reload(); // Reload to show banner
+                return;
             }
+            toast.error(res.message);
+
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (error: any) {
             toast.error(error.message);
