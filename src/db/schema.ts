@@ -23,7 +23,7 @@ export const accessGrantStatusEnum = pgEnum('access_grant_status', ['ACTIVE', 'E
 // --- 0. Waitlist ---
 export const waitlist = pgTable('waitlist', {
     id: serial('id').primaryKey(),
-    email: text('email'),
+    email: text('email').unique(),
     whatsapp: text('whatsapp'),
     telephone: text('telephone'),
     createdAt: timestamp('created_at').defaultNow().notNull(),
