@@ -57,7 +57,7 @@ const HeroSection = () => {
 
     return (
         <section>
-            <div className="max-w-6xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 ">
+            <div className="max-w-6xl mx-auto px-4 py-16 gap-12 text-gray-600 md:px-8 ">
                 <div className="space-y-5 max-w-4xl mx-auto text-center">
                     <div className="flex flex-wrap items-center justify-center gap-6 ">
                         {features.map((item, idx) => (
@@ -89,9 +89,9 @@ const HeroSection = () => {
                                 placeholder="Enter your email"
                                 className="text-gray-500 w-full p-2 outline-none"
                             />
-                            <button className="p-2 px-3 rounded-lg font-medium duration-150 outline-none shadow-md focus:shadow-none sm:px-4 whitespace-nowrap">
+                            <Button className="p-2 px-3 rounded-lg font-medium duration-150 outline-none shadow-md focus:shadow-none sm:px-4 whitespace-nowrap">
                                 Get Early Access
-                            </button>
+                            </Button>
                         </form>
                         <p className="mt-3 max-w-lg sm:mx-auto">Early users get free credits</p>
                     </div>
