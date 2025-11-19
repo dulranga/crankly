@@ -4,19 +4,12 @@ const Problem = () => {
             title: "Prices Don't Make Sense",
             description: "Why is it so expensive? You have no idea.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path d="M10.5 1.5H5.75A2.75 2.75 0 003 4.25v11.5A2.75 2.75 0 005.75 18.5h8.5A2.75 2.75 0 0017 15.75V9.5m-15-4h10m-10 3h10m-10 3h7" />
-                    <path
-                        d="M16 2v6m0 0l-2-2m2 2l2-2"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        fill="none"
-                    />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
+                    <g fill="none" stroke="currentColor" strokeWidth={1.5}>
+                        <path d="m8.23 22l4.9-4.9l3.5 3.5l5.6-5.6" />
+                        <path d="M16.73 15h5.5v5.5m-7.783-7.246A7.187 7.187 0 1 0 10 16.024M8.687 5.957v-2m0 10v-2" />
+                        <path d="M10.937 7.457v-.5a1 1 0 0 0-1-1h-2.5a1 1 0 0 0-1 1v.447a1 1 0 0 0 .783.977l2.933.652a1 1 0 0 1 .784.976v.947a1 1 0 0 1-1 1h-2.5a1 1 0 0 1-1-1v-.5" />
+                    </g>
                 </svg>
             ),
             color: "from-red-50 to-orange-50",
@@ -24,20 +17,13 @@ const Problem = () => {
             textColor: "text-red-700",
         },
         {
-            title: "No One Tells You the Truth",
+            title: "Sellers don't tell You the Truth",
             description: "Hidden accidents. Hidden damage. You only get their side of the story.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
                     <path
-                        fillRule="evenodd"
-                        d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                        clipRule="evenodd"
+                        fill="currentColor"
+                        d="M12.025 20.35q-.35 0-.687-.125t-.613-.375Q8 17.45 6.3 15.812t-2.662-2.874t-1.3-2.263T2 8.5q0-2.3 1.6-3.9T7.5 3q1.65 0 2.9.637t.9 1.838l-.925 3.25q-.125.5.163.888t.787.387H13l-.65 6.35q-.025.2.163.225t.237-.15L14.6 10.3q.15-.5-.15-.9t-.8-.4H12l1.525-4.525Q13.8 3.6 14.675 3.3T16.5 3q2.3 0 3.9 1.6T22 8.5q0 1.1-.4 2.175t-1.388 2.375t-2.65 2.938t-4.212 3.862q-.275.25-.625.375t-.7.125"
                     />
                 </svg>
             ),
@@ -50,17 +36,18 @@ const Problem = () => {
             description:
                 "Engine fails. Odometer was fake. Now you're stuck with a broken car and no recourse.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path
-                        fillRule="evenodd"
-                        d="M13.477 14.89A6 6 0 15.047 6.584A1 1 0 016.584 5.047a6 6 0 118.893 8.893zM9 16a1 1 0 100-2 1 1 0 000 2z"
-                        clipRule="evenodd"
-                    />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
+                    <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                    >
+                        <path d="M14.25 21a2.249 2.249 0 1 0 4.498 0a2.249 2.249 0 0 0-4.498 0m-10.5 0a2.25 2.25 0 1 0 4.5 0a2.25 2.25 0 0 0-4.5 0m10.632.75H8.118" />
+                        <path d="M3.881 21.75H2.25a1.5 1.5 0 0 1-1.5-1.5v-1.5a3 3 0 0 1 3-3l1.835-3.671a1.5 1.5 0 0 1 1.342-.829h4.9a1.5 1.5 0 0 1 1.342.829L15 15.75h5.25a3 3 0 0 1 3 3v1.5a1.5 1.5 0 0 1-1.5 1.5h-3.13m-3.62-6H3.75" />
+                        <path d="m15 15.75l4.5-4.5h3m0-3.75a2.45 2.45 0 0 1-.75-1.841c0-1.227 1.5-1.841 1.5-3.068A2.45 2.45 0 0 0 22.5.75M18 9a2.45 2.45 0 0 1-.75-1.841c0-1.227 1.5-1.841 1.5-3.068A2.45 2.45 0 0 0 18 2.25" />
+                    </g>
                 </svg>
             ),
             color: "from-pink-50 to-rose-50",
@@ -71,18 +58,22 @@ const Problem = () => {
             title: "It's Like Flipping a Coin",
             description: "No facts. No data. Just a blind bet with your money.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4z" />
-                    <path
-                        fillRule="evenodd"
-                        d="M18 9a2 2 0 00-2-2h-1V4a2 2 0 00-4 0v3h-2V4a2 2 0 00-4 0v3H2a2 2 0 00-2 2v4a2 2 0 002 2h16a2 2 0 002-2V9zM4 13a1 1 0 11-2 0 1 1 0 012 0zm12-1a1 1 0 100 2 1 1 0 000-2z"
-                        clipRule="evenodd"
-                    />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 14 14">
+                    <g fill="none" stroke="currentColor" strokeLinecap="round">
+                        <path
+                            strokeLinejoin="round"
+                            d="M7.08 11.827a1.55 1.55 0 0 0 1.361 1.364c.529.059 1.072.11 1.625.11c.554 0 1.096-.051 1.625-.11a1.55 1.55 0 0 0 1.361-1.364c.056-.526.104-1.066.104-1.616s-.048-1.09-.104-1.616a1.55 1.55 0 0 0-1.36-1.364a15 15 0 0 0-1.626-.11c-.553 0-1.096.051-1.625.11a1.55 1.55 0 0 0-1.36 1.364a15 15 0 0 0-.104 1.616c0 .55.047 1.09.103 1.616"
+                        />
+                        <path d="M8.954 10.852v.48m2.178-2.461v.48" />
+                        <path
+                            strokeLinejoin="round"
+                            d="M9.425 5.083c-.33-1.234-.782-2.398-1.196-3.519A1.04 1.04 0 0 0 7.123.897c-.964.123-1.974.232-2.97.499c-.996.266-1.924.677-2.82 1.052A1.04 1.04 0 0 0 .707 3.58c.201 1.177.393 2.411.723 3.645s.782 2.398 1.196 3.518a1.04 1.04 0 0 0 1.107.668c.472-.06.955-.117 1.443-.191m6.672-6.081c.135-.694.246-1.38.361-2.048a1.04 1.04 0 0 0-.625-1.131c-.465-.195-.94-.4-1.427-.589"
+                        />
+                        <path
+                            strokeLinejoin="round"
+                            d="M6.971 5.727L4.93 4.247L3.902 6.55L5.32 7.597"
+                        />
+                    </g>
                 </svg>
             ),
             color: "from-purple-50 to-indigo-50",

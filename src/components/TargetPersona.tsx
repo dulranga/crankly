@@ -5,18 +5,17 @@ const TargetPersona = () => {
             description:
                 "You don't know what to look for. Don't let someone else's problem become yours.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
-                    <path
-                        fillRule="evenodd"
-                        d="M4 5a2 2 0 012-2 1 1 0 000 2h.263l1.708 8.54a2 2 0 001.967 1.58h2.124a2 2 0 001.967-1.58L13.737 7h.263a1 1 0 000-2 2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3.707 9.293a1 1 0 000 1.414L9.414 17l-1.707 1.707a1 1 0 001.414 1.414L10.828 18.414l1.707 1.707a1 1 0 001.414-1.414L12.242 17l1.707-1.707a1 1 0 00-1.414-1.414L10.828 15.586l-1.707-1.707a1 1 0 00-1.414 0z"
-                        clipRule="evenodd"
-                    />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
+                    <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                    >
+                        <path d="M2 16a3 3 0 1 0 6 0a3 3 0 1 0-6 0m14 0a3 3 0 1 0 6 0a3 3 0 1 0-6 0m-8.5-2h5l4-4H6m1.5 4l4-4" />
+                        <path d="M13 6h2l1.5 3l2 4" />
+                    </g>
                 </svg>
             ),
             color: "from-blue-50 to-blue-100",
@@ -29,17 +28,18 @@ const TargetPersona = () => {
             description:
                 "You want your family safe. Know if that car has hidden problems before you drive them in it.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path
-                        fillRule="evenodd"
-                        d="M7 2a1 1 0 011 1v1h2V3a1 1 0 112 0v1h2V3a1 1 0 112 0v1a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2v1a1 1 0 11-2 0v-1h-2v1a1 1 0 11-2 0v-1a2 2 0 01-2-2v-2H4a1 1 0 110-2h1V9H4a1 1 0 110-2h1V5a2 2 0 012-2V3a1 1 0 011-1zm5 4a1 1 0 10-2 0 1 1 0 002 0zm-4 2a1 1 0 10-2 0 1 1 0 002 0zm2 2a1 1 0 10-2 0 1 1 0 002 0zm4 0a1 1 0 10-2 0 1 1 0 002 0z"
-                        clipRule="evenodd"
-                    />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
+                    <g
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                    >
+                        <path d="M5 17a2 2 0 1 0 4 0a2 2 0 0 0-4 0m11 0a2 2 0 1 0 4 0a2 2 0 0 0-4 0M5 9l2-4h7.438a2 2 0 0 1 1.94 1.515L17 9h3a2 2 0 0 1 2 2v3M10 9V5M2 7v4" />
+                        <path d="M22.001 14.001A5 5 0 0 0 18 12a5 5 0 0 0-4 2h-3a4.998 4.998 0 0 0-8.003.003" />
+                        <path d="M5 12V9h13" />
+                    </g>
                 </svg>
             ),
             color: "from-green-50 to-green-100",
@@ -51,17 +51,10 @@ const TargetPersona = () => {
             title: "Resellers & Dealers",
             description: "Know the real value. Buy smarter. Flip for real profit, not just luck.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
                     <path
-                        fillRule="evenodd"
-                        d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"
-                        clipRule="evenodd"
+                        fill="currentColor"
+                        d="M12.825 22.825L2 12V2h10l10.8 10.85zm0-2.825l7.15-7.15L11.15 4H4v7.15zM6.5 8q.625 0 1.063-.437T8 6.5t-.437-1.062T6.5 5t-1.062.438T5 6.5t.438 1.063T6.5 8m5.5 4"
                     />
                 </svg>
             ),
@@ -75,18 +68,10 @@ const TargetPersona = () => {
             description:
                 "Verify authenticity. Know the real story of every classic before adding it to your collection.",
             icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-6 h-6"
-                >
-                    <path d="M10.5 1.5H5.75A2.75 2.75 0 003 4.25v11.5A2.75 2.75 0 005.75 18.5h8.5A2.75 2.75 0 0017 15.75V9.5" />
+                <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
                     <path
-                        d="M9 9l2 2m0 0l2-2m-2 2v-4"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        fill="none"
+                        fill="currentColor"
+                        d="M6 19v2H3v-9l2.45-7h13.1L21 12v9h-3v-2zm-.2-9h12.4l-1.05-3H6.85zM5 12v5zm2.5 4q.625 0 1.063-.437T9 14.5t-.437-1.062T7.5 13t-1.062.438T6 14.5t.438 1.063T7.5 16m9 0q.625 0 1.063-.437T18 14.5t-.437-1.062T16.5 13t-1.062.438T15 14.5t.438 1.063T16.5 16M5 17h14v-5H5z"
                     />
                 </svg>
             ),
@@ -116,7 +101,7 @@ const TargetPersona = () => {
                         {personas.map((persona, idx) => (
                             <div
                                 key={idx}
-                                className={`bg-gradient-to-br ${persona.color} border-2 ${persona.borderColor} rounded-lg p-6 text-left transition-all duration-300 hover:shadow-lg cursor-default`}
+                                className={`bg-gradient-to-br ${persona.color} border-2 ${persona.borderColor} rounded-lg p-6 text-left cursor-default`}
                             >
                                 <div className="flex items-center gap-3 mb-4">
                                     <div
