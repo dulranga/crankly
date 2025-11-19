@@ -1,3 +1,4 @@
+import { Features } from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
 
 const structuredData = {
@@ -142,6 +143,7 @@ export default function Home() {
             />
             <div className="space-y-14 lg:space-y-20">
                 <HeroSection />
+                <Features />
             </div>
         </>
     );

@@ -1,7 +1,7 @@
 const HeroSection = () => {
     const features = [
         {
-            name: "Trusted",
+            name: "Fully Transparent",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,9 +55,9 @@ const HeroSection = () => {
 
     return (
         <section>
-            <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 xl:flex">
-                <div className="space-y-5 max-w-2xl mx-auto text-center xl:text-left">
-                    <div className="flex flex-wrap items-center justify-center gap-6 xl:justify-start">
+            <div className="max-w-6xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8 ">
+                <div className="space-y-5 max-w-4xl mx-auto text-center">
+                    <div className="flex flex-wrap items-center justify-center gap-6 ">
                         {features.map((item, idx) => (
                             <div
                                 key={idx}
@@ -69,13 +69,15 @@ const HeroSection = () => {
                         ))}
                     </div>
                     <h1 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
-                        Explore in-demand careers and develop cutting edge skills
+                        Sri Lanka’s <span className="underline">first</span> truth-checking platform
+                        for second-hand vehicles.
                     </h1>
-                    <p className="max-w-xl mx-auto xl:mx-0">
-                        Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae.
+                    <p className="max-w-xl mx-auto text-balance">
+                        We reveal real historical facts about any vehicle - past social media posts,
+                        accident hints, previous buyer feedback, and more... so you know exactly
+                        what you’re paying for.
                     </p>
-                    <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 xl:justify-start">
+                    <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0 ">
                         <a
                             href="javascript:void(0)"
                             className="flex items-center justify-center gap-x-2 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-lg md:inline-flex"
