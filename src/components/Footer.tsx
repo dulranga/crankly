@@ -32,9 +32,9 @@ export default function Footer() {
             <div className="max-w-lg sm:mx-auto sm:text-center">
                 <img src="https://www.floatui.com/logo.svg" className="w-32 sm:mx-auto" />
                 <p className="leading-relaxed mt-2 text-[15px]">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ratione autem
+                    minima at unde, eveniet quam consequuntur perferendis dolor perspiciatis eius
+                    amet quod dolores ea soluta quo, voluptates similique tempora!
                 </p>
             </div>
             <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">

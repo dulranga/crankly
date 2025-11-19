@@ -1,5 +1,6 @@
 import { Features } from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
+import WaitList from "@/components/Waitlist";
 
 const structuredData = {
     "@context": "https://schema.org",
@@ -143,6 +144,7 @@ export default function Home() {
             />
             <div className="space-y-14 lg:space-y-20">
                 <HeroSection />
+                <WaitList />
                 <Features />
             </div>
         </>
